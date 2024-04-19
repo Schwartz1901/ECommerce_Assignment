@@ -8,7 +8,6 @@
 
 use Automattic\Jetpack\Constants;
 use Automattic\WooCommerce\Admin\RemoteInboxNotifications as PromotionRuleEngine;
-use Automattic\WooCommerce\Admin\RemoteSpecs\RuleProcessors\RuleEvaluator;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
@@ -316,16 +315,16 @@ class WC_Admin_Addons {
 
 		if ( 'storefront' === $template ) {
 			if ( 'storefront' === $stylesheet ) {
-				$url         = 'https://woocommerce.com/product-category/themes/storefront-child-theme-themes/';
+				$url         = 'https://woo.com/product-category/themes/storefront-child-theme-themes/';
 				$text        = __( 'Need a fresh look? Try Storefront child themes', 'woocommerce' );
 				$utm_content = 'nostorefrontchildtheme';
 			} else {
-				$url         = 'https://woocommerce.com/product-category/themes/storefront-child-theme-themes/';
+				$url         = 'https://woo.com/product-category/themes/storefront-child-theme-themes/';
 				$text        = __( 'View more Storefront child themes', 'woocommerce' );
 				$utm_content = 'hasstorefrontchildtheme';
 			}
 		} else {
-			$url         = 'https://woocommerce.com/storefront/';
+			$url         = 'https://woo.com/storefront/';
 			$text        = __( 'Need a theme? Try Storefront', 'woocommerce' );
 			$utm_content = 'nostorefront';
 		}
@@ -1015,11 +1014,11 @@ class WC_Admin_Addons {
 					wp_kses_post(
 						/* translators: a url */
 						__(
-							'To start growing your business, head over to <a href="%s">WooCommerce.com</a>, where you\'ll find the most popular WooCommerce extensions.',
+							'To start growing your business, head over to <a href="%s">Woo.com</a>, where you\'ll find the most popular WooCommerce extensions.',
 							'woocommerce'
 						)
 					),
-					'https://woocommerce.com/products/?utm_source=extensionsscreen&utm_medium=product&utm_campaign=connectionerror'
+					'https://woo.com/products/?utm_source=extensionsscreen&utm_medium=product&utm_campaign=connectionerror'
 				);
 				?>
 			</p>
@@ -1076,7 +1075,7 @@ class WC_Admin_Addons {
 		// Check for existence of promotions and evaluate out if we should show them.
 		if ( ! empty( $promotions ) ) {
 			foreach ( $promotions as $promo_id => $promotion ) {
-				$evaluator = new RuleEvaluator();
+				$evaluator = new PromotionRuleEngine\RuleEvaluator();
 				$passed    = $evaluator->evaluate( $promotion->rules );
 				if ( ! $passed ) {
 					unset( $promotions[ $promo_id ] );
@@ -1547,7 +1546,7 @@ class WC_Admin_Addons {
 	}
 
 	/**
-	 * Make wp_safe_remote_get request to WooCommerce.com endpoint.
+	 * Make wp_safe_remote_get request to Woo.com endpoint.
 	 * Optionally pass user auth token, locale or country.
 	 *
 	 * @param string $url     URL to request.

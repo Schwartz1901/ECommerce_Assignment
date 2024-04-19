@@ -297,15 +297,24 @@ class AssetDataRegistry {
 	 * @param string  $key              The key used to reference the data being registered. This should use camelCase.
 	 * @param mixed   $data             If not a function, registered to the registry as is. If a function, then the
 	 *                                  callback is invoked right before output to the screen.
-	 * @param boolean $check_key_exists Deprecated. If set to true, duplicate data will be ignored if the key exists.
+	 * @param boolean $check_key_exists If set to true, duplicate data will be ignored if the key exists.
 	 *                                  If false, duplicate data will cause an exception.
+	 *
+	 * @throws InvalidArgumentException  Only throws when site is in debug mode. Always logs the error.
 	 */
 	public function add( $key, $data, $check_key_exists = false ) {
-		if ( $check_key_exists ) {
-			wc_deprecated_argument( 'Automattic\WooCommerce\Blocks\Assets\AssetDataRegistry::add()', '8.9', 'The $check_key_exists parameter is no longer used: all duplicate data will be ignored if the key exists by default' );
+		if ( $check_key_exists && $this->exists( $key ) ) {
+			return;
 		}
-
-		$this->add_data( $key, $data );
+		try {
+			$this->add_data( $key, $data );
+		} catch ( Exception $e ) {
+			if ( $this->debug() ) {
+				// bubble up.
+				throw $e;
+			}
+			wc_caught_exception( $e, __METHOD__, [ $key, $data ] );
+		}
 	}
 
 	/**
@@ -405,19 +414,24 @@ class AssetDataRegistry {
 	 *
 	 * @param   string $key   Key for the data.
 	 * @param   mixed  $data  Value for the data.
+	 *
+	 * @throws InvalidArgumentException  If key is not a string or already
+	 *                                   exists in internal data cache.
 	 */
 	protected function add_data( $key, $data ) {
 		if ( ! is_string( $key ) ) {
-			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_trigger_error
-			trigger_error( esc_html__( 'Key for the data being registered must be a string', 'woocommerce' ), E_USER_WARNING );
-			return;
-		}
-		if ( $this->exists( $key ) ) {
-			return;
+			if ( $this->debug() ) {
+				throw new InvalidArgumentException(
+					'Key for the data being registered must be a string'
+				);
+			}
 		}
 		if ( isset( $this->data[ $key ] ) ) {
-			// phpcs:ignore WordPress.PHP.DevelopmentFunctions.error_log_trigger_error
-			trigger_error( esc_html__( 'Overriding existing data with an already registered key is not allowed', 'woocommerce' ), E_USER_WARNING );
+			if ( $this->debug() ) {
+				throw new InvalidArgumentException(
+					'Overriding existing data with an already registered key is not allowed'
+				);
+			}
 			return;
 		}
 		if ( \is_callable( $data ) ) {

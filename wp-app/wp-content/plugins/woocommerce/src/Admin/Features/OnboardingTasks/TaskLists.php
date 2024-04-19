@@ -118,7 +118,6 @@ class TaskLists {
 			'Tax',
 			'Shipping',
 			'Marketing',
-			'LaunchYourStore',
 		);
 
 		if ( Features::is_enabled( 'core-profiler' ) ) {

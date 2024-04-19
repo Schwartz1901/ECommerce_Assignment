@@ -414,14 +414,10 @@ class TaskList {
 	public function get_json() {
 		$this->possibly_track_completion();
 		$tasks_json = array();
-
-		// We have no use for hidden lists, it's expensive to compute individual tasks completion.
-		if ( $this->is_visible() ) {
-			foreach ( $this->tasks as $task ) {
-				$json = $task->get_json();
-				if ( $json['canView'] ) {
-					$tasks_json[] = $json;
-				}
+		foreach ( $this->tasks as $task ) {
+			$json = $task->get_json();
+			if ( $json['canView'] ) {
+				$tasks_json[] = $json;
 			}
 		}
 

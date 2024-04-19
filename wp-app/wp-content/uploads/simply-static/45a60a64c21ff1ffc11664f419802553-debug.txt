@@ -1,0 +1,701 @@
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:83] Starting a job; no job is presently running
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:84] Here's our task list: setup, fetch_urls, create_zip_archive, wrapup
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:98] Pushing first task to queue: setup
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:132] Current task: setup
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:149] Performing task: setup
+[2024-04-18 17:30:26] [class-ss-task.php:44] Status message: [setup] Setting up
+[2024-04-18 17:30:26] [class-ss-setup-task.php:33] Creating archive directory: /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/
+[2024-04-18 17:30:26] [class-ss-setup-task.php:79] Adding origin URL to queue: https://decentreads-ec1e60.ingress-florina.ewp.live/
+[2024-04-18 17:30:26] [class-ss-setup-task.php:137] File /var/www/wptbox/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js exists; adding to queue as: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:171] We've found our next task: fetch_urls
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:55] Total pages: 2; Pages remaining: 2
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 2
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b23e570-mDOJBb.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/?simply_static_page=53
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/?simply_static_page=53
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:103] Filesize: 48205 bytes
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/html; charset=UTF-8
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:233] New filename for static page: index.html
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b23e570-mDOJBb.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/index.html
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:144] Adding 32 URLs to the queue
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 2
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b2c1276-qw1BR2.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js?simply_static_page=54
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js?simply_static_page=54
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:103] Filesize: 2240 bytes
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b2c1276-qw1BR2.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/simply-static//src/integrations/simply-cdn/assets/ssh-form-webhook.js
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:26] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 0 of 2 pages/files
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-18 17:30:26] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:55] Total pages: 33; Pages remaining: 31
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/xmlrpc.php
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:31; Total: 33
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:65] Excludable found: URL: https://decentreads-ec1e60.ingress-florina.ewp.live/xmlrpc.php
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:75] Skipping URL because it is no-save and no-follow
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/css/dist/block-library/style.min.css
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:30; Total: 33
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b2c6690-lLL9Wi.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/css/dist/block-library/style.min.css?simply_static_page=56
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/css/dist/block-library/style.min.css?simply_static_page=56
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:103] Filesize: 113381 bytes
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/css/dist/block-library/style.min.css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b2c6690-lLL9Wi.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-includes/css/dist/block-library/style.min.css
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/base/gutenberg-blocks.css
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:29; Total: 33
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b2cc89d-WMSc1i.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/base/gutenberg-blocks.css?simply_static_page=57
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/base/gutenberg-blocks.css?simply_static_page=57
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:103] Filesize: 42947 bytes
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/css/base/gutenberg-blocks.css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b2cc89d-WMSc1i.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/css/base/gutenberg-blocks.css
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/style.css
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:28; Total: 33
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b2d09b8-Ju8M6Z.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/style.css?simply_static_page=58
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/style.css?simply_static_page=58
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:103] Filesize: 40491 bytes
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/style.css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b2d09b8-Ju8M6Z.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/style.css
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/base/icons.css
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:27; Total: 33
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b2d4873-8Xh37b.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/base/icons.css?simply_static_page=59
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/base/icons.css?simply_static_page=59
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:103] Filesize: 80264 bytes
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/css/base/icons.css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b2d4873-8Xh37b.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/css/base/icons.css
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:144] Adding 10 URLs to the queue
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:26; Total: 33
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b2dceb5-4NIEXx.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css?simply_static_page=60
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css?simply_static_page=60
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:103] Filesize: 58518 bytes
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: text/css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b2dceb5-4NIEXx.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/css/woocommerce/woocommerce.css
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:144] Adding 9 URLs to the queue
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/index.php
+[2024-04-18 17:30:26] [class-ss-task.php:58] [PAGES STATUS] Remaining:25; Total: 33
+[2024-04-18 17:30:26] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b2e3822-RqiM4U.tmp
+[2024-04-18 17:30:26] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/index.php?simply_static_page=61
+[2024-04-18 17:30:26] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/index.php?simply_static_page=61
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 0 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 301 | content_type: text/html; charset=UTF-8
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:147] We weren't able to establish a filename; deleting temp file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:190] redirect_url: https://decentreads-ec1e60.ingress-florina.ewp.live/
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:209] This looks like a redirect from http to https (or visa versa); adding new URL to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:24; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3227b4-U8xf5D.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?simply_static_page=62
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?simply_static_page=62
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 8171 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/dist/vendor/wp-polyfill-inert.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3227b4-U8xf5D.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/regenerator-runtime.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:23; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b325a29-4ZWel6.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/regenerator-runtime.min.js?simply_static_page=63
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/regenerator-runtime.min.js?simply_static_page=63
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 6625 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/dist/vendor/regenerator-runtime.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b325a29-4ZWel6.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-includes/js/dist/vendor/regenerator-runtime.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/wp-polyfill.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:22; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3283c4-bx15kg.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/wp-polyfill.min.js?simply_static_page=64
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/vendor/wp-polyfill.min.js?simply_static_page=64
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 38590 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/dist/vendor/wp-polyfill.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3283c4-bx15kg.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-includes/js/dist/vendor/wp-polyfill.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/hooks.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:21; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b32aa5a-wJyYRd.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/hooks.min.js?simply_static_page=65
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/dist/hooks.min.js?simply_static_page=65
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 4307 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/dist/hooks.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b32aa5a-wJyYRd.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-includes/js/dist/hooks.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/jquery/jquery.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:20; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b32d11d-IukHE5.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/jquery/jquery.min.js?simply_static_page=66
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/jquery/jquery.min.js?simply_static_page=66
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 87553 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/jquery/jquery.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b32d11d-IukHE5.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-includes/js/jquery/jquery.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/jquery/jquery-migrate.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3304e0-dztyvN.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=67
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-includes/js/jquery/jquery-migrate.min.js?simply_static_page=67
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 13577 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-includes/js/jquery/jquery-migrate.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3304e0-dztyvN.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-includes/js/jquery/jquery-migrate.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3332a5-UOBkLs.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?simply_static_page=68
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?simply_static_page=68
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 9636 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3332a5-UOBkLs.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b335b1f-k4I4b9.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?simply_static_page=69
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?simply_static_page=69
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 3058 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b335b1f-k4I4b9.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b33ab53-zAeQaT.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?simply_static_page=70
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?simply_static_page=70
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 1720 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b33ab53-zAeQaT.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b33d21f-1DEnqD.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?simply_static_page=71
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?simply_static_page=71
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 2139 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b33d21f-1DEnqD.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b33fa9f-VjjfBa.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?simply_static_page=72
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?simply_static_page=72
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 2939 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b33fa9f-VjjfBa.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b342759-ejzwuz.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?simply_static_page=73
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?simply_static_page=73
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 14500 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b342759-ejzwuz.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b344e83-vleCMK.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?simply_static_page=74
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?simply_static_page=74
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 1509 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b344e83-vleCMK.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/navigation.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3477bc-Qy6MiV.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/navigation.min.js?simply_static_page=75
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/navigation.min.js?simply_static_page=75
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 3026 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/js/navigation.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3477bc-Qy6MiV.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/js/navigation.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/woocommerce/header-cart.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b34a31e-3QxkC8.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/woocommerce/header-cart.min.js?simply_static_page=76
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/woocommerce/header-cart.min.js?simply_static_page=76
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 532 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/js/woocommerce/header-cart.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b34a31e-3QxkC8.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/js/woocommerce/header-cart.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/footer.min.js
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3536db-McSIAu.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/footer.min.js?simply_static_page=77
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/js/footer.min.js?simply_static_page=77
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 746 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/javascript
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/js/footer.min.js
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3536db-McSIAu.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/js/footer.min.js
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.eot
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b36a721-rOVehN.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.eot?simply_static_page=78
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.eot?simply_static_page=78
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 1676 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/vnd.ms-fontobject
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/star.eot
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b36a721-rOVehN.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/star.eot
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.woff
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b381b50-F2GwHp.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.woff?simply_static_page=79
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.woff?simply_static_page=79
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 1304 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/star.woff
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b381b50-F2GwHp.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/star.woff
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.ttf
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b385b6b-E1neUe.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.ttf?simply_static_page=80
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.ttf?simply_static_page=80
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 1512 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-font-ttf
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/star.ttf
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b385b6b-E1neUe.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/star.ttf
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.svg
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b39c011-4fyZcu.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.svg?simply_static_page=81
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/star.svg?simply_static_page=81
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 929 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/star.svg
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b39c011-4fyZcu.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/star.svg
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3b3aeb-46gh5R.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot?simply_static_page=82
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot?simply_static_page=82
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 14280 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/vnd.ms-fontobject
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3b3aeb-46gh5R.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.eot
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3b71ee-YKqF1v.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff?simply_static_page=83
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff?simply_static_page=83
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 14176 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3b71ee-YKqF1v.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.woff
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3cd22f-MKKJoA.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf?simply_static_page=84
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf?simply_static_page=84
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 14100 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-font-ttf
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3cd22f-MKKJoA.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.ttf
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg
+[2024-04-18 17:30:27] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 33
+[2024-04-18 17:30:27] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b3e4d0b-9vJACM.tmp
+[2024-04-18 17:30:27] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg?simply_static_page=85
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg?simply_static_page=85
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:103] Filesize: 46770 bytes
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg
+[2024-04-18 17:30:27] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b3e4d0b-9vJACM.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/plugins/woocommerce/assets/fonts/WooCommerce.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 2 of 33 pages/files
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:55] Total pages: 52; Pages remaining: 19
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.eot
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:19; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b409f34-0ahaIN.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.eot?simply_static_page=86
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.eot?simply_static_page=86
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 133034 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/vnd.ms-fontobject
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-brands-400.eot
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b409f34-0ahaIN.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-brands-400.eot
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff2
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:18; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4391ae-afFEKk.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff2?simply_static_page=87
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff2?simply_static_page=87
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 76612 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-brands-400.woff2
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4391ae-afFEKk.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff2
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:17; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b43ca02-nKgXP0.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff?simply_static_page=88
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff?simply_static_page=88
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 89824 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-brands-400.woff
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b43ca02-nKgXP0.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-brands-400.woff
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.ttf
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:16; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4404fd-R7lG9f.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.ttf?simply_static_page=89
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.ttf?simply_static_page=89
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 132728 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-font-ttf
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-brands-400.ttf
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4404fd-R7lG9f.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-brands-400.ttf
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:15; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4558fe-aTakcH.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.svg?simply_static_page=90
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-brands-400.svg?simply_static_page=90
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 715890 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-brands-400.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4558fe-aTakcH.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-brands-400.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.eot
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:14; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b45ea50-lEEBul.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.eot?simply_static_page=91
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.eot?simply_static_page=91
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 202902 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/vnd.ms-fontobject
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-solid-900.eot
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b45ea50-lEEBul.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-solid-900.eot
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff2
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:13; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b46d686-zdsHhm.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff2?simply_static_page=92
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff2?simply_static_page=92
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 79444 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff2
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-solid-900.woff2
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b46d686-zdsHhm.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff2
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:12; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b470943-Dwb5QN.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff?simply_static_page=93
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff?simply_static_page=93
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 103300 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: font/woff
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-solid-900.woff
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b470943-Dwb5QN.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-solid-900.woff
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.ttf
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:11; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4745c4-6wnuO6.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.ttf?simply_static_page=94
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.ttf?simply_static_page=94
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 202616 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: application/x-font-ttf
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-solid-900.ttf
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4745c4-6wnuO6.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-solid-900.ttf
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:10; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b48415c-uVv8mH.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.svg?simply_static_page=95
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/fonts/fa-solid-900.svg?simply_static_page=95
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 897426 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/fonts/fa-solid-900.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b48415c-uVv8mH.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/fonts/fa-solid-900.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/unknown.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:9; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b48e053-n3rEp3.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/unknown.svg?simply_static_page=96
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/unknown.svg?simply_static_page=96
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 732 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/unknown.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b48e053-n3rEp3.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/unknown.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/visa.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:8; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b491814-ktYJVj.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/visa.svg?simply_static_page=97
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/visa.svg?simply_static_page=97
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 3014 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/visa.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b491814-ktYJVj.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/visa.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/mastercard.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:7; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b494ac5-Ph5jzl.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/mastercard.svg?simply_static_page=98
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/mastercard.svg?simply_static_page=98
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 12391 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/mastercard.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b494ac5-Ph5jzl.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/mastercard.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/laser.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:6; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b49b6e5-24JDH2.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/laser.svg?simply_static_page=99
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/laser.svg?simply_static_page=99
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 4901 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/laser.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b49b6e5-24JDH2.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/laser.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/diners.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:5; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b49f2c5-99eNaQ.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/diners.svg?simply_static_page=100
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/diners.svg?simply_static_page=100
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 2031 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/diners.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b49f2c5-99eNaQ.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/diners.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/maestro.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:4; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4a27c1-Xk8UJk.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/maestro.svg?simply_static_page=101
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/maestro.svg?simply_static_page=101
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 16174 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/maestro.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4a27c1-Xk8UJk.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/maestro.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/jcb.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:3; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4a6536-8HtfIf.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/jcb.svg?simply_static_page=102
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/jcb.svg?simply_static_page=102
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 5879 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/jcb.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4a6536-8HtfIf.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/jcb.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/amex.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:2; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4aa1d7-0qdUaA.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/amex.svg?simply_static_page=103
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/amex.svg?simply_static_page=103
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 10424 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/amex.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4aa1d7-0qdUaA.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/amex.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:58] URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/discover.svg
+[2024-04-18 17:30:28] [class-ss-task.php:58] [PAGES STATUS] Remaining:1; Total: 52
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:69] URL is not being excluded
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:94] Fetching URL and saving it to: /tmp/662158b4ad643-5TLJ9W.tmp
+[2024-04-18 17:30:28] [class-ss-page-handler.php:38] URL Prepared:https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/discover.svg?simply_static_page=104
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:251] Fetching URL: https://decentreads-ec1e60.ingress-florina.ewp.live/wp-content/themes/storefront/assets/images/credit-cards/discover.svg?simply_static_page=104
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:103] Filesize: 4937 bytes
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:119] http_status_code: 200 | content_type: image/svg+xml
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:233] New filename for static page: wp-content/themes/storefront/assets/images/credit-cards/discover.svg
+[2024-04-18 17:30:28] [class-ss-url-fetcher.php:143] Renaming temp file from /tmp/662158b4ad643-5TLJ9W.tmp to /var/www/wptbox/wp-content/uploads/simply-static/temp-files/simply-static-1-1713461426/wp-content/themes/storefront/assets/images/credit-cards/discover.svg
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:137] Extracting URLs and replacing URLs in the static file
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:144] Adding 0 URLs to the queue
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:155] We're saving this URL; keeping the static file
+[2024-04-18 17:30:28] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 33 of 52 pages/files
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:177] We're not done with the fetch_urls task yet
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:132] Current task: fetch_urls
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:149] Performing task: fetch_urls
+[2024-04-18 17:30:28] [class-ss-fetch-urls-task.php:55] Total pages: 52; Pages remaining: 0
+[2024-04-18 17:30:28] [class-ss-task.php:44] Status message: [fetch_urls] Fetched 52 of 52 pages/files
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:171] We've found our next task: create_zip_archive
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:132] Current task: create_zip_archive
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:149] Performing task: create_zip_archive
+[2024-04-18 17:30:28] [class-ss-create-zip-archive.php:71] Fetching list of files to include in zip
+[2024-04-18 17:30:28] [class-ss-create-zip-archive.php:80] Creating zip archive
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:380] Error: (1) Uncaught Error: Call to undefined function php_uname() in /var/www/wptbox/wp-admin/includes/class-pclzip.php:5717Stack trace:#0 /var/www/wptbox/wp-admin/includes/class-pclzip.php(1463): PclZipUtilTranslateWinPath()#1 /var/www/wptbox/wp-admin/includes/class-pclzip.php(312): PclZip->privParseOptions()#2 /var/www/wptbox/wp-content/plugins/simply-static/src/tasks/class-ss-create-zip-archive.php(82): PclZip->create()#3 /var/www/wptbox/wp-content/plugins/simply-static/src/tasks/class-ss-create-zip-archive.php(24): Simply_Static\Create_Zip_Archive_Task->create_zip()#4 /var/www/wptbox/wp-content/plugins/simply-static/src/class-ss-archive-creation-job.php(150): Simply_Static\Create_Zip_Archive_Task->perform()#5 /var/www/wptbox/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): Simply_Static\Archive_Creation_Job->task()#6 /var/www/wptbox/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(175): WP_Background_Process->handle()#7 /var/www/wptbox/wp-includes/class-wp-hook.php(324): WP_Background_Process->maybe_handle()#8 /var/www/wptbox/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()#9 /var/www/wptbox/wp-includes/plugin.php(517): WP_Hook->do_action()#10 /var/www/wptbox/wp-admin/admin-ajax.php(192): do_action()#11 {main}  thrown in <b>/var/www/wptbox/wp-admin/includes/class-pclzip.php</b> on line <b>5717</b>
+[2024-04-18 17:30:28] [class-ss-archive-creation-job.php:320] Status message: [error] Error: (1) Uncaught Error: Call to undefined function php_uname() in /var/www/wptbox/wp-admin/includes/class-pclzip.php:5717Stack trace:#0 /var/www/wptbox/wp-admin/includes/class-pclzip.php(1463): PclZipUtilTranslateWinPath()#1 /var/www/wptbox/wp-admin/includes/class-pclzip.php(312): PclZip->privParseOptions()#2 /var/www/wptbox/wp-content/plugins/simply-static/src/tasks/class-ss-create-zip-archive.php(82): PclZip->create()#3 /var/www/wptbox/wp-content/plugins/simply-static/src/tasks/class-ss-create-zip-archive.php(24): Simply_Static\Create_Zip_Archive_Task->create_zip()#4 /var/www/wptbox/wp-content/plugins/simply-static/src/class-ss-archive-creation-job.php(150): Simply_Static\Create_Zip_Archive_Task->perform()#5 /var/www/wptbox/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(301): Simply_Static\Archive_Creation_Job->task()#6 /var/www/wptbox/wp-content/plugins/woocommerce/includes/libraries/wp-background-process.php(175): WP_Background_Process->handle()#7 /var/www/wptbox/wp-includes/class-wp-hook.php(324): WP_Background_Process->maybe_handle()#8 /var/www/wptbox/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()#9 /var/www/wptbox/wp-includes/plugin.php(517): WP_Hook->do_action()#10 /var/www/wptbox/wp-admin/admin-ajax.php(192): do_action()#11 {main}  thrown in <b>/var/www/wptbox/wp-admin/includes/class-pclzip.php</b> on line <b>5717</b>

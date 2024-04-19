@@ -19,6 +19,8 @@ services:
       - db
     links:
       - db
+    extra_hosts:
+    - localhost:172.20.0.4
 
   wpcli:
     image: wordpress:cli
